@@ -1,0 +1,62 @@
+
+
+  
+    <ion-content>
+      
+  <ion-item >
+      <ion-label>select Language</ion-label>
+      <ion-select  [(ngModel)]="selectedLanguage" (ionChange)="languageChanged()">
+
+        <ion-select-option value="en">English</ion-select-option>
+        <ion-select-option value="ta">Tamil</ion-select-option>
+        <ion-select-option value="tl">Telugu</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+        <ion-grid>
+             <ion-row justify-content-center>
+              <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                <div text-center>
+                  
+                  <h2 ><strong style="color:#0d0d0e">Login</strong> </h2>
+                </div>
+                <div padding >
+                <form>
+                   <ion-item no-padding class="animated fadeInUp">
+                    <ion-label position="floating">
+                      <ion-icon name="person" item-start></ion-icon>
+                      {{ 'HOME.username' | translate:params }}
+                    </ion-label>
+                    <ion-input type="text" ></ion-input>
+                    
+                  </ion-item>
+             
+                  <ion-item no-padding class="animated fadeInUp">
+                    <ion-label position="floating">
+                      <ion-icon name="lock" item-start></ion-icon>
+                      {{ 'HOME.password' | translate:params }}
+                    </ion-label>
+                    <ion-input  type="password"></ion-input>
+                    
+                  </ion-item>
+               
+                  <br/>
+                  <div padding>
+                    <ion-button type="submit" size="large" color="dark" expand="block">Login</ion-button>
+                  </div>
+                </form>
+                </div>
+          
+                <div text-center>
+                  
+                    <small >{{ 'HOME.designedby' | translate:params }} <strong style="color:#0d0d0e;cursor: pointer;"> <a href="https://karthikraji2020.github.io">Karthik Raji</a></strong> </small>
+                  </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-content>
+        
+
+
+
+  
