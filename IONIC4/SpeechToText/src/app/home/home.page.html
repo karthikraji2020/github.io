@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+  
+    <ion-title>
+     Talk to me
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+
+  <ion-card  >
+    <ion-card-header [color]="isRecording?'danger':'primary'">
+        hello
+    </ion-card-header>
+    <ion-card-content>
+
+       
+    <ion-button color="success" (click)="start()">start</ion-button>
+
+
+
+    </ion-card-content>
+  </ion-card>
+
+<!-- for demo view  -->
+  <ion-card [style.background-color]="bgcolor">
+<ion-card-header>
+  hi
+</ion-card-header>
+<ion-card-content>
+
+    <ion-list *ngFor="let match of matches; let i = index" >
+     
+      <ion-text color="danger">
+        <h1> {{ match[i] }}
+        </h1>
+      </ion-text>
+    </ion-list>
+</ion-card-content>
+  </ion-card>
+</ion-content>
