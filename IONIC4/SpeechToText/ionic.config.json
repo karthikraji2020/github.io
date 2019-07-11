@@ -1,7 +1,0 @@
-{
-  "name": "totext",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
